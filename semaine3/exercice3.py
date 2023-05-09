@@ -7,10 +7,12 @@ cost = float(input("Cost of meal:"))
 # Calcul le pouboire et total amount
 tip_percentage = [ 0.15 , 0.20 , 0.25 ]
 
-for tip_percentage in tip_percentage :
+# range(15,26,5) 
+# for tip in range(0.15,0.26,0.05): 
+for tip_percentage in tip_percentage :#[ 0.15, 0.20, 0.25 ]
 
-    tip_cost = tip_percentage * cost 
-    total_cost = tip_cost + cost
+    tip_cost = tip_percentage * cost # = round(tip_percentage * cost,2)
+    total_cost = tip_cost + cost # = round(tip_cost + cost,2)
 
     # print pouboire 
     print(f"\n{int(tip_percentage*100)}% Tip:")

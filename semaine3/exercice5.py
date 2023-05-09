@@ -4,6 +4,7 @@ print("Perfect Number Calculator\n")
 
 # utilisateur donne un number
 number = int(input("Enter a number: "))
+# for i in range(1, number/2 + 1)
 sum = 0
 i = 1
 while i < number:   
@@ -14,6 +15,6 @@ while i < number:
 if sum == number:
     print("\n",number,"is a prefect number.")
 else:
-    print("\n",number,"is not a prefect number.")
+    print("\nSorry,",number,"is not a prefect number.")
 
 print("\nBye!")
